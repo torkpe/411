@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+
+$black: #000000;
+$white: #ffff;
+$screen-sm-min: 300px;
+$screen-sm-max: 500px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.4rem;
+}

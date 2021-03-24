@@ -1,0 +1,16 @@
+@import '../../App.scss';
+
+.navBar {
+  height: 8rem;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navBarLink {
+  color: $white;
+  margin-left: 1rem;
+}
