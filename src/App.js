@@ -4,7 +4,8 @@ import './App.scss';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Main from './screens/Main/Main';
-
+import signInForm from './components/Forms/Signin/index';
+import { SIGN_IN } from '../utils/constants';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Modal
         showModal={showModal}
         closeModal={() => setShowModal(false)}>
-        <h1>{authType}</h1>
+        <h1>{authType === SIGN_IN ? <signInForm /> : "Comming soon"}</h1>
       </Modal>
     </div>
   );
